@@ -1,17 +1,20 @@
 <template>
   <div
-    class="w-full h-screen flex justify-center items-center border text-green-500 text-3xl"
+    class="w-full h-screen flex overflow-hidden justify-center items-center border text-green-500 text-3xl"
   >
-    Welcome to Vue js 2.
+    <LayoutPageVue></LayoutPageVue>
   </div>
 </template>
 <script>
+import LayoutPageVue from "./components/LayoutPage.vue";
 export default {
   name: "App",
   data() {
     return {};
   },
-  components: {},
+  components: {
+    LayoutPageVue,
+  },
   methods: {},
   computed: {},
   mounted() {},
